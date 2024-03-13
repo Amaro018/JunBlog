@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JHOMARI AMARO PORTFOLIO</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet" />
+		<style>
+			.home-content {
+				display: none;
+			}
+			.active {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<a href="#" class="logo">Jhomari.</a>
+
+			<div class="navbar">
+				<a href="index.html" onclick="showSection('section1')">HOME</a>
+				<a href="#" onclick="showSection('section2')">ABOUT</a>
+				<a href="#" onclick="showSection('section3')">SERVICES</a>
+				<a href="#" onclick="showSection('section4')">PORTFOLIO</a>
+				<a href="#" onclick="showSection('section5')">CONTACT</a>
+			</div>
+		</header>
+
+		<section class="home">
+			<div class="home-content active" id="section1">
+				<h1>Hi, I'm Jhomari Amaro</h1>
+				<h3>Frontend Developer</h3>
+				<p>
+					As a new front-end developer with budding skill in HTML, CSS,
+					JavaScript, and PHP, I am eager to bring my fresh perspective and
+					technical abilities to a dynamic team. My passion for crafting
+					responsive and intuitive web experiences drives my continuous learning
+					and application of the latest industry practices. I am on the hunt for
+					opportunities where I can contribute, grow, and make meaningful
+					impacts through innovative web development. I am excited to join an
+					organization that values creativity, problem-solving, and a
+					forward-thinking approach to technology.
+				</p>
+				<div class="btn-box">
+					<a href="#">Hire Me</a>
+					<a href="#">Let's Talk</a>
+				</div>
+			</div>
+
+			<div id="section2" class="home-content">
+				<h1>ABOUT</h1>
+				<h3>Languages I know</h3>
+				<p>
+					C++<br />
+					HTML<br />
+					CSS<br />
+					PHP<br />
+					PYTHON<br />
+				</p>
+				<div class="btn-box">
+					<a href="#">Let's Talk</a>
+				</div>
+			</div>
+
+			<div id="section3" class="home-content">
+				<h1>SERVICES</h1>
+				<p>web development, procurement services</p>
+				<div class="btn-box">
+					<a href="#">Hire Me</a>
+					<a href="#">Let's Talk</a>
+				</div>
+			</div>
+
+			<div id="section4" class="home-content">
+				<h1>PORTFOLIO</h1>
+				<h3>PROJECTS</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+					deleniti iste totam aperiam voluptatum odio dolor molestiae accusamus
+					doloribus in hic, a, necessitatibus labore debitis, ipsa soluta error
+					eveniet veritatis.
+				</p>
+				<div class="btn-box">
+					<a href="#">CV</a>
+					<a href="#">Let's Talk</a>
+				</div>
+			</div>
+
+			<div id="section5" class="home-content">
+				<h1>CONTACT</h1>
+				<h3>Hello, You can message me here</h3>
+				<p class="textboxMessage">
+					Full Name
+					<input type="text" />
+					Email
+					<input type="text" />
+					Message
+					<input type="text" id="textboxId" />
+				</p>
+				<div class="btn-box">
+					<a href="#">Submit</a>
+				</div>
+			</div>
+
+			<script>
+				function showSection(sectionId) {
+					// Hide all sections
+					const sections = document.querySelectorAll(".home-content");
+					sections.forEach((section) => {
+						section.classList.remove("active");
+					});
+
+					// Show the selected section
+					const activeSection = document.getElementById(sectionId);
+					activeSection.classList.add("active");
+				}
+			</script>
+
+			<div class="social-med">
+				<a href="https://www.facebook.com/amaro018/"
+					><i class="bx bxl-facebook"></i
+				></a>
+				<a href="https://github.com/Amaro018"><i class="bx bxl-github"></i></a>
+				<a href="https://www.linkedin.com/in/jhomari-amaro-945987242/"
+					><i class="bx bxl-linkedin"></i
+				></a>
+			</div>
+
+			<span class="home-image-hover"></span>
+		</section>
+	</body>
+</html>
