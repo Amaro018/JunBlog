@@ -8,20 +8,13 @@
 		<link
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 			rel="stylesheet" />
-		<style>
-			.home-content {
-				display: none;
-			}
-			.active {
-				display: block;
-			}
-		</style>
 	</head>
 	<body>
 		<header class="header">
 			<a href="#" class="logo">Jhomari.</a>
 
 			<div class="navbar">
+				<scripts src="script.js"></scripts>
 				<a href="index.html" onclick="showSection('section1')">HOME</a>
 				<a href="#" onclick="showSection('section2')">ABOUT</a>
 				<a href="#" onclick="showSection('section3')">SERVICES</a>
@@ -105,21 +98,7 @@
 					<a href="#">Submit</a>
 				</div>
 			</div>
-
-			<script>
-				function showSection(sectionId) {
-					// Hide all sections
-					const sections = document.querySelectorAll(".home-content");
-					sections.forEach((section) => {
-						section.classList.remove("active");
-					});
-
-					// Show the selected section
-					const activeSection = document.getElementById(sectionId);
-					activeSection.classList.add("active");
-				}
-			</script>
-
+			<script src="script.js"></script>
 			<div class="social-med">
 				<a href="https://www.facebook.com/amaro018/"
 					><i class="bx bxl-facebook"></i

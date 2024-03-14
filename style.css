@@ -397,14 +397,9 @@ body {
 		background: #081b29;
 	}
 }
-
-.home-content .textboxMessage input {
-	display: flex;
-	flex-direction: column;
-	width: 90%;
-	border-radius: 5px;
-	margin: 3px;
+.home-content {
+	display: none;
 }
-#textboxId {
-	height: 80px;
+.active {
+	display: block;
 }
