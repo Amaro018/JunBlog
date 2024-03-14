@@ -397,9 +397,20 @@ body {
 		background: #081b29;
 	}
 }
+
 .home-content {
 	display: none;
 }
+
 .active {
 	display: block;
+}
+
+.home-content input {
+	width: 100%;
+	border-radius: 3px;
+	margin: 5px 0 5px 0;
+}
+#textboxId {
+	height: 80px;
 }
