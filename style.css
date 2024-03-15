@@ -89,7 +89,7 @@ body {
 
 .home-content {
 	max-width: 600px;
-	z-index: 100;
+	z-index: 20;
 }
 
 .home-content h1 {
@@ -166,7 +166,7 @@ body {
 	background: #081b29;
 	animation: showRight 1s ease forwards;
 	animation-delay: 2s;
-	z-index: 2;
+	z-index: 10;
 }
 
 .btn-box a {
@@ -184,7 +184,7 @@ body {
 	text-decoration: none;
 	font-weight: 600;
 	letter-spacing: 1px;
-	z-index: 1;
+	z-index: 9;
 	overflow: hidden;
 	transition: 0.5s;
 }
@@ -214,7 +214,7 @@ body {
 	width: 0%;
 	height: 100%;
 	background: #081b29;
-	z-index: -1;
+	z-index: 8;
 	transition: 0.3s;
 }
 
@@ -228,6 +228,7 @@ body {
 	width: 170px;
 	display: flex;
 	justify-content: space-between;
+	z-index: 20;
 }
 
 .social-med::before {
@@ -240,7 +241,7 @@ body {
 	background: #081b29;
 	animation: showRight 1s ease forwards;
 	animation-delay: 2.4s;
-	z-index: 2;
+	z-index: 21;
 }
 
 .social-med a {
@@ -256,7 +257,7 @@ body {
 	font-size: 20px;
 	color: #29b0f3;
 	text-decoration: none;
-	z-index: 1;
+	z-index: -1;
 	overflow: hidden;
 }
 
@@ -271,8 +272,8 @@ body {
 	left: 0;
 	width: 0;
 	height: 100%;
+	z-index: -99;
 	background: #29b0f3;
-	z-index: -1;
 	transition: 0.3s;
 }
 
@@ -291,7 +292,7 @@ body {
 	animation: AntiHover 0.1s forwards;
 	animation-delay: 4s;
 	pointer-events: none;
-	z-index: 1;
+	z-index: 13;
 }
 
 .home-image-hover::after {
@@ -304,7 +305,7 @@ body {
 	background: #081b29;
 	animation: showRight 1s ease forwards;
 	animation-delay: 3s;
-	z-index: 100;
+	z-index: 10;
 }
 
 .home-image-hover:hover {
