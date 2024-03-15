@@ -89,6 +89,7 @@ body {
 
 .home-content {
 	max-width: 600px;
+	z-index: 100;
 }
 
 .home-content h1 {
