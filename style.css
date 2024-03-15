@@ -291,6 +291,7 @@ body {
 	animation: AntiHover 0.1s forwards;
 	animation-delay: 4s;
 	pointer-events: none;
+	z-index: 1;
 }
 
 .home-image-hover::after {
